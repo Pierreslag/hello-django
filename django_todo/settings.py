@@ -29,8 +29,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['8000-pierreslag-hellodjango-lyyxaijxnw9.ws-eu101.gitpod.io']
 ALLOWED_HOSTS = ['ps-django-todo-app-7bddc45d08f9.herokuapp.com']
 
-ps-django-todo-app-7bddc45d08f9.herokuapp.com
-
 
 # Application definition
 
