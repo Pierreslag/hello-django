@@ -29,9 +29,12 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-wck4_-kn*n-!y#&*ubk3x
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = development
 
-ALLOWED_HOSTS = ['8000-pierreslag-hellodjango-lyyxaijxnw9.ws-eu101.gitpod.io']
-ALLOWED_HOSTS = ['ps-django-todo-app-7bddc45d08f9.herokuapp.com']
-ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
+if development:
+    ALLOWED_HOSTS = ['localhost']
+else:
+    ALLOWED_HOSTS = ['8000-pierreslag-hellodjango-lyyxaijxnw9.ws-eu101.gitpod.io']
+    ALLOWED_HOSTS = ['ps-django-todo-app-7bddc45d08f9.herokuapp.com']
+    ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 
 # Application definition
